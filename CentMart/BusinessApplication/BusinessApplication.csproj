@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5536B40B-43C0-48C9-B578-D502E0C039E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BusinessApplication</RootNamespace>
+    <AssemblyName>BusinessApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Order.cs" />
+    <Compile Include="BL\Product.cs" />
+    <Compile Include="BL\User.cs" />
+    <Compile Include="DL\GlobalVariables.cs" />
+    <Compile Include="DL\OrderCRUD.cs" />
+    <Compile Include="DL\ProductCRUD.cs" />
+    <Compile Include="DL\UserCRUD.cs" />
+    <Compile Include="Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cashier.Designer.cs">
+      <DependentUpon>Form_Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_InventoryController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_InventoryController.Designer.cs">
+      <DependentUpon>Form_InventoryController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SFs\SF_AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_AddProduct.Designer.cs">
+      <DependentUpon>SF_AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFs\SF_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_AddUser.Designer.cs">
+      <DependentUpon>SF_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFs\SF_ForProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_ForProduct.Designer.cs">
+      <DependentUpon>SF_ForProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFs\SF_ForUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_ForUsers.Designer.cs">
+      <DependentUpon>SF_ForUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFs\SF_SetGST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_SetGST.Designer.cs">
+      <DependentUpon>SF_SetGST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFs\SF_TransferProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFs\SF_TransferProduct.Designer.cs">
+      <DependentUpon>SF_TransferProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vs\Validations.cs" />
+    <EmbeddedResource Include="Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cashier.resx">
+      <DependentUpon>Form_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_InventoryController.resx">
+      <DependentUpon>Form_InventoryController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SFs\SF_AddProduct.resx">
+      <DependentUpon>SF_AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFs\SF_AddUser.resx">
+      <DependentUpon>SF_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFs\SF_ForProduct.resx">
+      <DependentUpon>SF_ForProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFs\SF_ForUsers.resx">
+      <DependentUpon>SF_ForUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFs\SF_SetGST.resx">
+      <DependentUpon>SF_SetGST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFs\SF_TransferProduct.resx">
+      <DependentUpon>SF_TransferProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

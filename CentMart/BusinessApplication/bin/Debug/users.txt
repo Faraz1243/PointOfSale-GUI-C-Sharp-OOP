@@ -1,0 +1,5 @@
+ali,121212qwQW,aliadisiss1212@controller.centmart.com,11145678900,232323,21121212,Inventory Controller,Tempo,1234512345123,31,5,2022
+faraz,Faraz123,3@admin.centmart.com,12345678900,2222,344,Admin,ali,1212121212121,3,6,2022
+admin,Faraz123,admin@admin.centmart.com,37374747473,23323,address,Admin,ali,9191919191917,3,6,2022
+faraz,Faraz123,faraz@controller.centmart.com,45454545454,2323,address,Inventory Controller,ali,8585736465734,3,6,2022
+ali,Faraz123,ali@cashier.centmart.com,63646463738,233,adddress,Cashier,ali,7463849484632,3,6,2022

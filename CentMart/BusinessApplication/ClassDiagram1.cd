@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BusinessApplication.BL.Order">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAwAAAAAAAAAAAAQAAAAEQACAAEAAgAAAAAA=</HashCode>
+      <FileName>BL\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.BL.Product">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAAAQEAAIAAAACAABQAAgAUAAKAAAAIgAACCAA=</HashCode>
+      <FileName>BL\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.BL.User">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQATAAECAgAAAgEAAAABQAAAIEAAAiAAAAIgAAAAE=</HashCode>
+      <FileName>BL\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.DL.GlobalVariables">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAIKAAACAAAARAQAYAACACBAEAAADAAAgAQA=</HashCode>
+      <FileName>DL\GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.DL.OrderCRUD">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DL\OrderCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.DL.ProductCRUD">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgAICAAAAACAAAAAAAAEAAAAABAAAKAAAAAAg=</HashCode>
+      <FileName>DL\ProductCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.DL.UserCRUD">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAICAAAAAAAAAAAAACAAAAAABAAAAIBBAgAQ=</HashCode>
+      <FileName>DL\UserCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessApplication.Vs.Validations">
+    <Position X="12.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAEAwAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vs\Validations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
